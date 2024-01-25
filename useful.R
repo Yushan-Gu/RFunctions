@@ -8,3 +8,19 @@ replaceEach <- function(v, l1, l2){
   }
   return(v)
 }
+
+orderBy <- function(table, col, dec = T){
+  if(!dec){
+    table[order(SmrT[[col]]),]
+  }else{
+    table[rev(order(SmrT[[col]])),]
+  }
+}
+
+
+
+
+
+
+
+
