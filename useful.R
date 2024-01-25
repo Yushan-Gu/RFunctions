@@ -11,9 +11,9 @@ replaceEach <- function(v, l1, l2){
 
 orderBy <- function(table, col, dec = T){
   if(!dec){
-    table[order(SmrT[[col]]),]
+    table[order(table[[col]]),]
   }else{
-    table[rev(order(SmrT[[col]])),]
+    table[rev(order(table[[col]])),]
   }
 }
 
