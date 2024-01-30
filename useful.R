@@ -17,7 +17,11 @@ orderBy <- function(table, col, dec = T){
   }
 }
 
-
+quiet <- function(x) { 
+  sink(tempfile()) 
+  on.exit(sink()) 
+  invisible(force(x)) 
+} 
 
 
 
