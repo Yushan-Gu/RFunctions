@@ -23,7 +23,10 @@ quiet <- function(x) {
   invisible(force(x)) 
 } 
 
-
+give.colnames <- function(Tab, nameslis){
+  colnames(Tab) <- nameslis
+  return(Tab)
+}
 
 
 
