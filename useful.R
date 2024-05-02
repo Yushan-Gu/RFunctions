@@ -28,6 +28,10 @@ give.colnames <- function(Tab, nameslis){
   return(Tab)
 }
 
+give.rownames <- function(Tab, nameslis){
+  rownames(Tab) <- nameslis
+  return(Tab)
+}
 
 
 
